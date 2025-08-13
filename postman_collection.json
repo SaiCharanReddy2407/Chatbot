@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "Groq Bridge on Railway",
+    "_postman_id": "placeholder",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://YOUR-RAILWAY-APP.up.railway.app/health",
+          "protocol": "https",
+          "host": [
+            "YOUR-RAILWAY-APP",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Chat",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"prompt\": \"Summarize Power BI in one sentence.\"}"
+        },
+        "url": {
+          "raw": "https://YOUR-RAILWAY-APP.up.railway.app/chat",
+          "protocol": "https",
+          "host": [
+            "YOUR-RAILWAY-APP",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            "chat"
+          ]
+        }
+      }
+    }
+  ]
+}
